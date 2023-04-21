@@ -1,7 +1,9 @@
+import Link from "next/link";
+
 export default function HomePage() {
   return (
     <div>
-      <a href="/volumes">Go to the volumes overview</a>
+      <Link href="/volumes">Go to the volumes overview</Link>
     </div>
   );
 }
