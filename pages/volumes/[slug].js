@@ -43,7 +43,11 @@ const Volume = () => {
     query: { slug },
   } = useRouter();
 
-  const volume = findVolume(slug);
+  const volume = findVolume(slug) || {
+    title: "untitled",
+    description: "no description",
+    books: [],
+  };
 
   const { title, description, books } = volume;
 
